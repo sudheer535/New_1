@@ -8,7 +8,7 @@ pipeline {
                 git credentialsId: 'NewGitHub', url: 'https://github.com/sudheer535/New_1.git'
             }
         }
-        Stage('maven build'){
+        stage('maven build'){
             steps{
                 sh "Mvn clean package"
             }
